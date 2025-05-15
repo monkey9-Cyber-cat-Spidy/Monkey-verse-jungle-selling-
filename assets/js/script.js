@@ -1,42 +1,30 @@
+const menuToggleBtn = document.getElementById('menu-toggle'); // bottom menu button
+const navbar = document.querySelector('.monkey13'); // sidebar menu
+const overlay = document.querySelector('.monkey2'); // overlay div
+const navCloseBtn = document.querySelector('[data-nav-close-btn]'); // close button in menu
+const navbarLinks = document.querySelectorAll('[data-nav-link]'); // menu links
 
-// Toggle utility
-
-const navbar = document.querySelector(".monkey13");
-const overlay = document.querySelector(".monkey2");
-const navCloseBtn = document.querySelector("[data-nav-close-btn]");
-const navOpenBtn = document.querySelector("[data-nav-open-btn]");
-const navbarLinks = document.querySelectorAll("[data-nav-link]");
-
-// Open menu
-navOpenBtn?.addEventListener("click", () => {
-  navbar.classList.add("active");
-  overlay.classList.add("active");
+// Toggle menu open/close on bottom menu button click
+menuToggleBtn.addEventListener('click', () => {
+  navbar.classList.toggle('active');
+  overlay.classList.toggle('active');
 });
 
-// Close menu
-const closeMenu = () => {
-  navbar.classList.remove("active");
-  overlay.classList.remove("active");
-};
-
-navCloseBtn?.addEventListener("click", closeMenu);
-overlay?.addEventListener("click", closeMenu);
-navbarLinks.forEach((link) => {
-  link.addEventListener("click", closeMenu);
+// Close menu on clicking close button or overlay
+navCloseBtn.addEventListener('click', () => {
+  navbar.classList.remove('active');
+  overlay.classList.remove('active');
 });
 
-// Header active on scroll
-const header = document.querySelector("[data-header]");
-window.addEventListener("scroll", () => {
-  window.scrollY >= 400
-    ? header.classList.add("active")
-    : header.classList.remove("active");
+overlay.addEventListener('click', () => {
+  navbar.classList.remove('active');
+  overlay.classList.remove('active');
 });
 
-// Auto year update
-document.addEventListener("DOMContentLoaded", () => {
-  const yearElement = document.getElementById("current-year");
-  if (yearElement) {
-    yearElement.textContent = new Date().getFullYear();
-  }
+// Close menu when clicking any menu link
+navbarLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    navbar.classList.remove('active');
+    overlay.classList.remove('active');
+  });
 });
