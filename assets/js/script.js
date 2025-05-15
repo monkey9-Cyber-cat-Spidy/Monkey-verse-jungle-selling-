@@ -46,3 +46,13 @@ const header = document.querySelector("[data-header]")
 window.addEventListener("scroll", () => {
   window.scrollY >= 400 ? header.classList.add("active") : header.classList.remove("active")
 })
+
+/**
+ * Update copyright year automatically
+ */
+document.addEventListener("DOMContentLoaded", () => {
+  const yearElement = document.getElementById("current-year")
+  if (yearElement) {
+    yearElement.textContent = new Date().getFullYear()
+  }
+})
