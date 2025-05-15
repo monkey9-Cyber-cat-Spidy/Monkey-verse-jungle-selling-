@@ -1586,82 +1586,9 @@ body {
  * responsive for larger than 1200px screen
  */
 
-@media (min-width: 1200px) {
-  /**
-   * CUSTOM PROPERTY
-   */
 
-  :root {
-    /**
-     * typography
-     */
 
-    --fs-2: 2.75rem;
-    --fs-4: 1.5rem;
-  }
-
-  /**
-   * REUSED STYLE
-   */
-
-  .monkey4 {
-    max-width: 1200px;
-  }
-
-  .monkey53 > li {
-    min-width: calc(33.33% - 16.66px);
-  }
-
-  /**
-   * HEADER
-   */
-
-  .monkey11 {
-    padding-block: 30px;
-  }
-
-  .monkey20:last-child,
-  .monkey14,
-  .monkey2 {
-    display: none;
-  }
-
-  .monkey13,
-  .monkey13.active {
-    all: unset;
-  }
-
-  .monkey17 {
-    display: flex;
-    align-items: center;
-    gap: 30px;
-  }
-
-  .monkey18 {
-    color: var(--monkey-dark-brown);
-    --fs-5: 1.125rem;
-    text-transform: capitalize;
-  }
-
-  .monkey1 {
-    padding-bottom: 114px;
-  }
-
-  .monkey11 {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-  }
-
-  .monkey1.active .monkey11 {
-    position: fixed;
-    bottom: auto;
-    top: -94px;
-    padding-block: 20px;
-    box-shadow: 0 10px 50px hsla(25, 76%, 31%, 0.2);
-    animation: slideDown 0.25s ease-out forwards;
-  }
+  
 
   @keyframes slideDown {
     0% {
