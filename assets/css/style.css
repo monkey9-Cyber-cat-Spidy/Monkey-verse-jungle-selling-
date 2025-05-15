@@ -1,0 +1,855 @@
+.monkey72:is(:hover, :focus) {
+  background: var(--monkey-orange);
+  color: var(--monkey-white);
+}
+
+/*-----------------------------------*\
+  #FEATURES
+\*-----------------------------------*/
+
+.monkey74 {
+  background: var(--monkey-cream);
+  padding-block: var(--section-padding);
+}
+
+.monkey75 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px 20px;
+}
+
+.monkey75 > li {
+  width: calc(50% - 10px);
+}
+
+.monkey76 {
+  position: relative;
+  background: var(--monkey-white);
+  padding: 40px 15px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  box-shadow: var(--shadow-1);
+}
+
+.monkey76:is(:hover, :focus) {
+  background: var(--monkey-orange);
+}
+
+.monkey76 .monkey77 {
+  background: var(--monkey-beige);
+  color: var(--monkey-orange);
+  width: 60px;
+  height: 60px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  font-size: 28px;
+}
+
+.monkey76 .monkey78 {
+  color: var(--monkey-dark-brown);
+  font-family: var(--ff-poppins);
+  font-size: var(--fs-6);
+  font-weight: var(--fw-600);
+  text-align: center;
+  transition: var(--transition);
+}
+
+.monkey76:is(:hover, :focus) .monkey78 {
+  color: var(--monkey-white);
+}
+
+.monkey76 .monkey79 {
+  background: var(--monkey-white);
+  color: var(--monkey-light-brown);
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  font-size: 20px;
+  border-radius: 50%;
+  box-shadow: 0 0 10px hsla(25, 76%, 31%, 0.1);
+  transition: var(--transition);
+}
+
+.monkey76:is(:hover, :focus) .monkey79 {
+  color: var(--monkey-orange);
+}
+
+/*-----------------------------------*\
+  #BLOG
+\*-----------------------------------*/
+
+.monkey80 {
+  padding-block: var(--section-padding);
+}
+
+.monkey82 {
+  box-shadow: var(--shadow-2);
+}
+
+.monkey82 .monkey83 {
+  overflow: hidden;
+  aspect-ratio: 2 / 1.5;
+}
+
+.monkey82 .monkey83 img {
+  height: 100%;
+  object-fit: cover;
+  transition: 0.5s ease;
+}
+
+.monkey82:is(:hover, :focus) .monkey83 img {
+  transform: scale(1.1);
+}
+
+.monkey84 {
+  padding: 30px;
+}
+
+.monkey82 .monkey86 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.monkey82 :is(.monkey87, .monkey90) {
+  color: var(--monkey-light-brown);
+  font-size: var(--fs-7);
+  font-weight: var(--fw-600);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transition: var(--transition);
+}
+
+.monkey82 :is(.monkey87, .monkey90) i {
+  color: var(--monkey-orange);
+}
+
+.monkey82 .monkey87:is(:hover, :focus) {
+  color: var(--monkey-orange);
+}
+
+.monkey88 {
+  font-size: 1rem;
+  --font-weight: var(--fw-600);
+}
+
+.monkey82 .monkey88:is(:hover, :focus) {
+  color: var(--monkey-orange);
+}
+
+.monkey89 {
+  padding-top: 20px;
+  border-top: 1px solid hsla(0, 0%, 0%, 0.1);
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.monkey82 .monkey91 {
+  color: var(--monkey-orange);
+  font-size: var(--fs-7);
+  font-weight: var(--fw-600);
+  text-transform: uppercase;
+}
+
+/*-----------------------------------*\
+  #CTA
+\*-----------------------------------*/
+
+.monkey92 {
+  background: linear-gradient(to bottom, var(--monkey-white) 50%, var(--monkey-dark-brown) 50%);
+}
+
+.monkey93 {
+  background: var(--monkey-orange);
+  padding: 50px 25px;
+  box-shadow: var(--shadow-2);
+}
+
+.monkey93 .monkey94 {
+  max-width: max-content;
+  margin-inline: auto;
+  margin-bottom: 30px;
+}
+
+.monkey93 .monkey95 {
+  color: var(--monkey-dark-brown);
+  line-height: 1.3;
+  margin-bottom: 15px;
+}
+
+.monkey93 .monkey96 {
+  color: var(--monkey-dark-brown);
+  font-size: var(--fs-5);
+  line-height: 1.8;
+}
+
+.monkey97 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--monkey-black);
+  background: var(--monkey-white);
+  box-shadow: var(--shadow-2);
+  border-color: var(--monkey-white);
+  margin-inline: auto;
+}
+
+.monkey97:is(:hover, :focus) {
+  background: none;
+  color: var(--monkey-dark-brown);
+  border-color: transparent;
+}
+
+.monkey97::before {
+  background: var(--monkey-black);
+}
+
+/*-----------------------------------*\
+  #FOOTER
+\*-----------------------------------*/
+
+.monkey98 {
+  background: var(--monkey-dark-brown);
+  color: var(--monkey-white);
+  margin-bottom: 68px;
+}
+
+.monkey98 .monkey4 {
+  padding-inline: 30px;
+}
+
+.monkey98 a {
+  color: inherit;
+}
+
+.monkey99 {
+  padding-top: 80px;
+  padding-bottom: 40px;
+}
+
+.monkey100 {
+  margin-bottom: 70px;
+}
+
+.monkey100 .monkey12 {
+  margin-bottom: 15px;
+}
+
+.monkey101 {
+  font-size: var(--fs-5);
+  line-height: 1.8;
+  margin-bottom: 30px;
+  max-width: 45ch;
+}
+
+.monkey102 {
+  display: grid;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.monkey103 {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.monkey103 i {
+  font-size: 18px;
+}
+
+.monkey103 :is(address, span) {
+  font-size: var(--fs-5);
+  transition: var(--transition);
+}
+
+.monkey103:is(:hover, :focus) span {
+  color: var(--monkey-orange);
+}
+
+.monkey104 {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.monkey107:not(:last-child) {
+  margin-bottom: 50px;
+}
+
+.monkey108 {
+  font-family: var(--ff-poppins);
+  font-size: var(--fs-3);
+  font-weight: var(--fw-700);
+  margin-bottom: 15px;
+}
+
+.monkey109 {
+  font-size: var(--fs-5);
+  padding-block: 10px;
+}
+
+.monkey109:is(:hover, :focus) {
+  color: var(--monkey-orange);
+}
+
+.monkey110 {
+  background: var(--monkey-dark-green);
+  padding-block: 25px;
+}
+
+.monkey111 {
+  font-size: var(--fs-5);
+  text-align: center;
+}
+
+.monkey111 a {
+  display: inline-block;
+}
+
+.monkey111 a:is(:hover, :focus) {
+  color: var(--monkey-orange);
+}
+
+/*-----------------------------------*\
+  #MEDIA QUERIES
+\*-----------------------------------*/
+
+/**
+ * responsive for larger than 600px screen
+ */
+
+@media (min-width: 600px) {
+  /**
+   * CUSTOM PROPERTY
+   */
+
+  :root {
+    /**
+     * typography
+     */
+
+    --fs-2: 1.875rem;
+  }
+
+  /**
+   * REUSED STYLE
+   */
+
+  .monkey4 {
+    max-width: 550px;
+    margin-inline: auto;
+  }
+
+  .monkey53 {
+    gap: 25px;
+    margin-inline: -25px;
+    padding-inline: 25px;
+    scroll-padding-left: 25px;
+  }
+
+  .monkey53 > li {
+    min-width: calc(50% - 12.5px);
+  }
+
+  /**
+   * SERVICE
+   */
+
+  .monkey44 > li {
+    width: calc(50% - 15px);
+  }
+
+  /**
+   * PROPERTY
+   */
+
+  .monkey51 .monkey4 {
+    max-width: unset;
+    padding-inline: 25px;
+  }
+
+  /**
+   * CTA
+   */
+
+  .monkey93 {
+    --fs-2: 1.5rem;
+  }
+
+  /**
+   * FOOTER
+   */
+
+  .monkey106 {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+}
+
+/**
+ * responsive for larger than 768px screen
+ */
+
+@media (min-width: 768px) {
+  /**
+   * CUSTOM PROPERTY
+   */
+
+  :root {
+    /**
+     * typography
+     */
+
+    --fs-1: 2.5rem;
+    --fs-5: 0.938rem;
+    --fs-6: 0.875rem;
+  }
+
+  /**
+   * REUSED STYLE
+   */
+
+  .monkey4 {
+    max-width: 720px;
+  }
+
+  .monkey27 {
+    --fs-5: 1rem;
+    padding: 12px 28px;
+  }
+
+  /**
+   * HEADER
+   */
+
+  .monkey3 {
+    padding-block: 5px;
+  }
+
+  .monkey3 .monkey7 {
+    margin-left: auto;
+  }
+
+  .monkey8 {
+    gap: 12px;
+  }
+
+  .monkey9 {
+    font-size: 1rem;
+  }
+
+  .monkey10 {
+    padding: 10px 20px;
+  }
+
+  .monkey19 {
+    all: unset;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .monkey11 .monkey4 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .monkey20 i {
+    margin-bottom: 0;
+  }
+
+  .monkey20 span {
+    display: none;
+  }
+
+  .monkey20 {
+    background: var(--monkey-white);
+    width: 50px;
+    height: 50px;
+    box-shadow: var(--shadow-2);
+  }
+
+  /**
+   * HERO
+   */
+
+  .monkey22 {
+    max-width: 400px;
+  }
+
+  /**
+   * ABOUT
+   */
+
+  .monkey30 .monkey36 {
+    max-width: 30ch;
+  }
+
+  .monkey37 {
+    max-width: 55ch;
+  }
+
+  .monkey38 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /**
+   * FEATURES
+   */
+
+  .monkey75 > li {
+    width: calc(33.33% - 13.33px);
+  }
+
+  .monkey76 {
+    gap: 20px;
+  }
+
+  .monkey76 .monkey77 {
+    width: 80px;
+    height: 80px;
+    font-size: 32px;
+  }
+
+  .monkey76 .monkey78 {
+    --fs-6: 1.125rem;
+  }
+
+  /**
+   * BLOG
+   */
+
+  .monkey82 {
+    --fs-7: 0.875rem;
+  }
+
+  .monkey88 {
+    font-size: 1.25rem;
+  }
+
+  .monkey80 .monkey86 {
+    gap: 30px;
+  }
+
+  /**
+   * CTA
+   */
+
+  .monkey93 {
+    --fs-2: 1.625rem;
+  }
+
+  /**
+   * FOOTER
+   */
+
+  .monkey98 {
+    margin-bottom: 0;
+  }
+}
+
+/**
+ * responsive for larger than 992px screen
+ */
+
+@media (min-width: 992px) {
+  /**
+   * CUSTOM PROPERTY
+   */
+
+  :root {
+    /**
+     * typography
+     */
+
+    --fs-1: 3.125rem;
+    --fs-4: 1.375rem;
+  }
+
+  /**
+   * REUSED STYLE
+   */
+
+  .monkey4 {
+    max-width: 970px;
+  }
+
+  .monkey27 {
+    padding: 15px 40px;
+  }
+
+  /**
+   * HEADER
+   */
+
+  .monkey5,
+  .monkey3 .monkey7 {
+    gap: 30px;
+  }
+
+  /**
+   * HERO
+   */
+
+  .monkey22 {
+    max-width: unset;
+    margin-bottom: 0;
+  }
+
+  .monkey21 .monkey4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+
+  /**
+   * ABOUT
+   */
+
+  .monkey30 .monkey4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 60px;
+  }
+
+  .monkey31 {
+    margin-bottom: 0;
+  }
+
+  .monkey31 > img {
+    width: 100%;
+  }
+
+  /**
+   * SERVICE
+   */
+
+  .monkey44 > li {
+    width: calc(33.33% - 20px);
+  }
+
+  /**
+   * PROPERTY
+   */
+
+  .monkey54 .monkey60 {
+    padding-inline: 30px;
+  }
+
+  .monkey66 {
+    padding: 20px 30px 30px;
+  }
+
+  /**
+   * FEATURES
+   */
+
+  .monkey75 {
+    column-gap: 30px;
+  }
+
+  .monkey75 > li {
+    width: calc(25% - 30px);
+  }
+
+  /**
+   * BLOG
+   */
+
+  .monkey88 {
+    font-size: 1.375rem;
+  }
+
+  /**
+   * CTA
+   */
+
+  .monkey93 {
+    --fs-2: 1.875rem;
+    --fs-5: 1rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+  }
+
+  .monkey93 :is(.monkey94, .monkey97) {
+    margin: 0;
+  }
+
+  /**
+   * FOOTER
+   */
+
+  .monkey99 .monkey4 {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .monkey100 {
+    max-width: 300px;
+    margin-bottom: 0;
+  }
+
+  .monkey106 {
+    flex-basis: 550px;
+  }
+}
+
+/**
+ * responsive for larger than 1200px screen
+ */
+
+@media (min-width: 1200px) {
+  /**
+   * CUSTOM PROPERTY
+   */
+
+  :root {
+    /**
+     * typography
+     */
+
+    --fs-2: 2.75rem;
+    --fs-4: 1.5rem;
+  }
+
+  /**
+   * REUSED STYLE
+   */
+
+  .monkey4 {
+    max-width: 1200px;
+  }
+
+  .monkey53 > li {
+    min-width: calc(33.33% - 16.66px);
+  }
+
+  /**
+   * HEADER
+   */
+
+  .monkey11 {
+    padding-block: 30px;
+  }
+
+  .monkey20:last-child,
+  .monkey14,
+  .monkey2 {
+    display: none;
+  }
+
+  .monkey13,
+  .monkey13.active {
+    all: unset;
+  }
+
+  .monkey17 {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .monkey18 {
+    color: var(--monkey-dark-brown);
+    --fs-5: 1.125rem;
+    text-transform: capitalize;
+  }
+
+  .monkey1 {
+    padding-bottom: 114px;
+  }
+
+  .monkey11 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+  }
+
+  .monkey1.active .monkey11 {
+    position: fixed;
+    bottom: auto;
+    top: -94px;
+    padding-block: 20px;
+    box-shadow: 0 10px 50px hsla(25, 76%, 31%, 0.2);
+    animation: slideDown 0.25s ease-out forwards;
+  }
+
+  @keyframes slideDown {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(100%);
+    }
+  }
+
+  /**
+   * HERO
+   */
+
+  .monkey26 {
+    padding-left: 30px;
+    max-width: 450px;
+    margin-bottom: 40px;
+  }
+
+  /**
+   * FEATURES
+   */
+
+  .monkey76 .monkey77 {
+    width: 100px;
+    height: 100px;
+    font-size: 45px;
+  }
+
+  .monkey76 .monkey78 {
+    --fs-6: 1.375rem;
+  }
+
+  /**
+   * CTA
+   */
+
+  .monkey93 {
+    --fs-2: 2.25rem;
+    padding-inline: 60px;
+  }
+
+  /**
+   * FOOTER
+   */
+
+  .monkey98 {
+    --fs-5: 1rem;
+  }
+
+  .monkey106 {
+    flex-basis: 700px;
+  }
+}
