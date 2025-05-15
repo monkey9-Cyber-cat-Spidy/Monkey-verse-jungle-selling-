@@ -115,6 +115,7 @@ html {
 body {
   background: var(--monkey-white);
   color: var(--monkey-light-brown);
+  overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 /*-----------------------------------*\
@@ -477,11 +478,18 @@ body {
 
 .monkey30 {
   padding-block: var(--section-padding);
+  overflow: hidden; /* Prevent horizontal scrolling */
 }
 
 .monkey31 {
   position: relative;
   margin-bottom: 40px;
+  max-width: 100%; /* Ensure the figure doesn't exceed its container */
+}
+
+.monkey31 > img {
+  max-width: 100%; /* Ensure the main image doesn't exceed its container */
+  display: block; /* Remove any extra space below the image */
 }
 
 .monkey32 {
@@ -489,6 +497,7 @@ body {
   bottom: -50px;
   right: 0;
   width: 50%;
+  max-width: 50%; /* Ensure the secondary image doesn't exceed half the width */
   border-radius: 4px;
   box-shadow: var(--shadow-2);
 }
@@ -546,6 +555,8 @@ body {
 .monkey43 {
   background: var(--monkey-cream);
   padding-block: var(--section-padding);
+  position: relative; /* Add position relative */
+  z-index: 1; /* Set a lower z-index than the property section */
 }
 
 .monkey44 {
@@ -553,6 +564,8 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
+  position: relative; /* Add position relative */
+  z-index: 1; /* Ensure proper stacking */
 }
 
 .monkey44 > li {
@@ -567,6 +580,8 @@ body {
   border-radius: 4px;
   box-shadow: var(--shadow-2);
   z-index: 1;
+  height: 100%; /* Ensure consistent height */
+  transform: translateZ(0); /* Force hardware acceleration */
 }
 
 .monkey45::before {
@@ -650,10 +665,15 @@ body {
 
 .monkey51 {
   padding-block: var(--section-padding);
+  position: relative; /* Add position relative */
+  z-index: 2; /* Set a higher z-index than the service section */
+  background-color: var(--monkey-white); /* Ensure background is solid */
 }
 
 .monkey52 {
   margin-top: 40px;
+  position: relative; /* Add position relative */
+  z-index: 2; /* Ensure proper stacking */
 }
 
 .monkey54 {
