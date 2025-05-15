@@ -1,12 +1,8 @@
 
 // Toggle utility
-const elemToggleFunc = (elem) => {
-  elem.classList.toggle("active");
-};
 
-// Elements
-const navbar = document.querySelector("[data-navbar]");
-const overlay = document.querySelector("[data-overlay]");
+const navbar = document.querySelector(".monkey13");
+const overlay = document.querySelector(".monkey2");
 const navCloseBtn = document.querySelector("[data-nav-close-btn]");
 const navOpenBtn = document.querySelector("[data-nav-open-btn]");
 const navbarLinks = document.querySelectorAll("[data-nav-link]");
