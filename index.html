@@ -1217,7 +1217,6 @@
   <!-- 
     - #FOOTER
   -->
-
   <footer class="monkey98" id="contact">
 
     <div class="monkey99">
@@ -1242,6 +1241,7 @@
                 <address>Jungle Central, Banana Island, Primate Paradise</address>
               </a>
             </li>
+          </ul>
         </div>
 
         <div class="monkey106">
@@ -1310,37 +1310,29 @@
 
           </ul>
 
-          <ul class="monkey107">
-
-            <li>
-              <p class="monkey108">Customer Care</p>
-            </li>
-
-            <li>
-              <a href="#" class="monkey109">Login</a>
-            </li>
-
-            <li>
-              <a href="#" class="monkey109">My account</a>
-            </li>
-
-            <li>
-              <a href="#" class="monkey109">Wish List</a>
-            </li>
-
-            <li>
-              <a href="#" class="monkey109">Order tracking</a>
-            </li>
-
-            <li>
-              <a href="#" class="monkey109">FAQ</a>
-            </li>
-
-            <li>
-              <a href="#contact" class="monkey109">Contact us</a>
-            </li>
-
-          </ul>
+          <div class="contact-form-container monkey107">
+            <p class="monkey108">Contact Us</p>
+            <form name="contact" method="POST" class="contact-form" data-netlify="true">
+              <input type="hidden" name="form-name" value="contact" />
+              
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+              </div>
+              
+              <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+          </div>
 
         </div>
 
@@ -1369,64 +1361,26 @@
   -->
   <script src="./script.js"></script>
 
-
-
-<style>
-  .monkey5 {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-  }
-  .monkey7 {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    flex-wrap: wrap;
-  }
-  .bottom-nav {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: #fff;
-    display: flex;
-    justify-content: space-around;
-    padding: 0.5rem 0;
-    border-top: 1px solid #ccc;
-    z-index: 1000;
-  }
-  .bottom-nav button {
-    background: none;
-    border: none;
-    font-size: 1.4rem;
-  }
-  .monkey13 {
-    position: fixed;
-    top: 0;
-    left: -100%;
-    width: 250px;
-    height: 100%;
-    background: #fff;
-    z-index: 1001;
-    transition: left 0.3s ease;
-    padding: 1rem;
-  }
-  .monkey13.active {
-    left: 0;
-  }
-</style>
-
-<!-- BOTTOM NAVBAR HTML -->
-<nav class="bottom-nav d-md-none">
-  <button aria-label="Search"><i class="fa fa-search"></i></button>
-  <button aria-label="Profile"><i class="fa fa-user"></i></button>
-  <button aria-label="Cart"><i class="fa fa-cart-shopping"></i></button>
-  <button data-nav-open-btn aria-label="Menu"><i class="fa fa-bars"></i></button>
-</nav>
-
-<!-- JS TOGGLE SCRIPT -->
-
-
+  <!-- Mobile Bottom Navigation Bar -->
+  <nav class="mobile-bottom-nav">
+    <button aria-label="Home" data-target="#home" class="active">
+      <i class="fa-solid fa-home"></i>
+      <span>Home</span>
+    </button>
+    <button aria-label="Properties" data-target="#property">
+      <i class="fa-solid fa-building"></i>
+      <span>Properties</span>
+    </button>
+    <button aria-label="Cart" data-target="#cart">
+      <i class="fa-solid fa-cart-shopping"></i>
+      <span>Cart</span>
+      <span class="cart-count">0</span>
+    </button>
+    <button data-nav-open-btn aria-label="Menu">
+      <i class="fa-solid fa-bars"></i>
+      <span>Menu</span>
+    </button>
+  </nav>
 </body>
 
 </html>
