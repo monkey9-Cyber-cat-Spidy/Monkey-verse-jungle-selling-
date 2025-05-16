@@ -49,13 +49,10 @@
 
     <div class="monkey3">
       <div class="monkey4">
-
         <ul class="monkey5">
-
           <li>
-            <a href="mailto: monkeyworld109@gmail.com" class="monkey6">
+            <a href="mailto:monkeyworld109@gmail.com" class="monkey6">
               <i class="fa-solid fa-envelope"></i>
-
               <span>monkeyworld109@gmail.com</span>
             </a>
           </li>
@@ -63,18 +60,13 @@
           <li>
             <a href="#" class="monkey6">
               <i class="fa-solid fa-location-dot"></i>
-
               <address>15/A, Jungle Tower, Banana Island</address>
             </a>
           </li>
-
         </ul>
 
         <div class="monkey7">
           <ul class="monkey8">
-
-
-
             <li>
               <a href="https://www.linkedin.com/in/kvsmanikanta" class="monkey9" aria-label="Linkedin">
                 <i class="fa-brands fa-linkedin"></i>
@@ -83,29 +75,36 @@
 
             <li>
               <a href="https://www.instagram.com/not_even_monkey" class="monkey9" aria-label="Instagram">
-                <i class="fa-brands fa-instagram-p"></i>
+                <i class="fa-brands fa-instagram"></i>
               </a>
             </li>
-
           </ul>
 
           <button class="monkey10">Add Listing</button>
         </div>
-
       </div>
     </div>
 
     <div class="monkey11">
       <div class="monkey4">
-
         <a href="#" class="monkey12">
           <img src="./assets/images/logo.png" alt="Monkeyverse logo">
         </a>
 
+        <!-- Desktop Navigation Menu -->
+        <nav class="desktop-nav d-none d-md-flex">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#service">Service</a>
+          <a href="#property">Property</a>
+          <a href="#cart">Cart</a>
+          <a href="#blog">Blog</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <!-- Mobile Navigation Menu (Slide-in) -->
         <nav class="monkey13" data-navbar>
-
           <div class="monkey14">
-
             <a href="#" class="monkey12">
               <img src="./assets/images/logo.png" alt="Monkeyverse logo">
             </a>
@@ -113,12 +112,10 @@
             <button class="monkey15" data-nav-close-btn aria-label="Close Menu">
               <i class="fa-solid fa-xmark"></i>
             </button>
-
           </div>
 
           <div class="monkey16">
             <ul class="monkey17">
-
               <li>
                 <a href="#home" class="monkey18" data-nav-link>Home</a>
               </li>
@@ -136,46 +133,24 @@
               </li>
 
               <li>
+                <a href="#cart" class="monkey18" data-nav-link>Cart</a>
+              </li>
+
+              <li>
                 <a href="#blog" class="monkey18" data-nav-link>Blog</a>
               </li>
 
               <li>
                 <a href="#contact" class="monkey18" data-nav-link>Contact</a>
               </li>
-
             </ul>
           </div>
-
         </nav>
 
-        <div class="monkey19">
-
-          <button class="monkey20" aria-label="Search">
-            <i class="fa-solid fa-magnifying-glass"></i>
-
-            <span>Search</span>
-          </button>
-
-          <button class="monkey20" aria-label="Profile">
-            <i class="fa-solid fa-user"></i>
-
-            <span>Profile</span>
-          </button>
-
-          <button class="monkey20" aria-label="Cart">
-            <i class="fa-solid fa-cart-shopping"></i>
-
-            <span>Cart</span>
-          </button>
-
-          <button class="monkey20" data-nav-open-btn aria-label="Open Menu">
-            <i class="fa-solid fa-bars"></i>
-
-            <span>Menu</span>
-          </button>
-
-        </div>
-
+        <!-- Mobile Menu Toggle Button (visible only on mobile) -->
+        <button class="d-md-none monkey15" data-nav-open-btn aria-label="Open Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
       </div>
     </div>
 
@@ -497,8 +472,8 @@
                       <i class="fa-solid fa-heart"></i>
                     </button>
 
-                    <button class="monkey72" aria-label="Add to list">
-                      <i class="fa-solid fa-circle-plus"></i>
+                    <button class="add-to-cart-btn monkey72" aria-label="Add to cart">
+                      <i class="fa-solid fa-cart-plus"></i>
                     </button>
 
                   </div>
@@ -615,8 +590,8 @@
                       <i class="fa-solid fa-heart"></i>
                     </button>
 
-                    <button class="monkey72" aria-label="Add to list">
-                      <i class="fa-solid fa-circle-plus"></i>
+                    <button class="add-to-cart-btn monkey72" aria-label="Add to cart">
+                      <i class="fa-solid fa-cart-plus"></i>
                     </button>
 
                   </div>
@@ -733,8 +708,8 @@
                       <i class="fa-solid fa-heart"></i>
                     </button>
 
-                    <button class="monkey72" aria-label="Add to list">
-                      <i class="fa-solid fa-circle-plus"></i>
+                    <button class="add-to-cart-btn monkey72" aria-label="Add to cart">
+                      <i class="fa-solid fa-cart-plus"></i>
                     </button>
 
                   </div>
@@ -851,8 +826,8 @@
                       <i class="fa-solid fa-heart"></i>
                     </button>
 
-                    <button class="monkey72" aria-label="Add to list">
-                      <i class="fa-solid fa-circle-plus"></i>
+                    <button class="add-to-cart-btn monkey72" aria-label="Add to cart">
+                      <i class="fa-solid fa-cart-plus"></i>
                     </button>
 
                   </div>
@@ -864,6 +839,36 @@
 
           </ul>
 
+        </div>
+      </section>
+
+      <!-- 
+        - #CART
+      -->
+      <section class="cart-section" id="cart">
+        <div class="monkey4">
+          <p class="monkey34">Shopping Cart</p>
+          <h2 class="monkey35 monkey36">Your Selected Properties</h2>
+          
+          <div class="cart-container">
+            <div class="cart-empty-message">
+              <i class="fa-solid fa-cart-shopping cart-icon"></i>
+              <p>Your cart is empty. Add properties to get started!</p>
+              <a href="#property" class="monkey27">Browse Properties</a>
+            </div>
+            
+            <ul class="cart-items">
+              <!-- Cart items will be added here dynamically -->
+            </ul>
+            
+            <div class="cart-summary">
+              <div class="cart-total">
+                <span>Total:</span>
+                <strong>0 Bananas</strong>
+              </div>
+              <button class="monkey27 checkout-btn">Proceed to Checkout</button>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -1217,6 +1222,7 @@
   <!-- 
     - #FOOTER
   -->
+
   <footer class="monkey98" id="contact">
 
     <div class="monkey99">
@@ -1351,16 +1357,6 @@
 
   </footer>
 
-  <!-- 
-    - Bootstrap JS
-  -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
-  <!-- 
-    - custom js link
-  -->
-  <script src="./script.js"></script>
-
   <!-- Mobile Bottom Navigation Bar -->
   <nav class="mobile-bottom-nav">
     <button aria-label="Home" data-target="#home" class="active">
@@ -1381,6 +1377,23 @@
       <span>Menu</span>
     </button>
   </nav>
+
+  <!-- Cart Notification -->
+  <div class="cart-notification">
+    <i class="fa-solid fa-check-circle"></i>
+    <p>Item added to cart!</p>
+  </div>
+
+  <!-- 
+    - Bootstrap JS
+  -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
 </body>
 
 </html>
