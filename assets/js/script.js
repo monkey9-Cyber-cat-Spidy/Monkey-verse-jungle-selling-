@@ -12,7 +12,26 @@ document.addEventListener("DOMContentLoaded", () => {
   const cartEmptyMessage = document.querySelector(".cart-empty-message")
   const cartSummary = document.querySelector(".cart-summary")
   const cartTotalElement = document.querySelector(".cart-total strong")
+  const form = document.getElementById('contact-form');
+  const thankYouMessage = document.getElementById('thank-you-message');
 
+  form.addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    // Use fetch to submit the form data to Netlify
+    const formData = new FormData(form);
+
+    fetch('/', {
+      method: 'POST',
+      body: formData,
+      headers: { 'Accept': 'application/json' }
+    })
+    .then(() => {
+      form.style.display = 'none';
+      thankYouMessage.style.display = 'block';
+    })
+    .catch(error => alert('Oops! There was a problem submitting your form'));
+  });
   // Sticky header
   const header = document.querySelector("[data-header]")
 
