@@ -2349,32 +2349,55 @@ body {
   }
 }
 
+
 /* Improve responsive layout for property section */
 @media (min-width: 768px) {
   .monkey52 {
-    display: block; /* Override grid to allow horizontal scrolling */
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
   }
 
   .monkey53 {
-    display: flex;
-    gap: 20px;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    padding: 10px 0 20px 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    overflow-x: visible;
+    scroll-snap-type: none;
   }
 
   .monkey53 > li {
-    min-width: 320px;
-    max-width: 320px;
-    scroll-snap-align: start;
-    flex: 0 0 auto;
+    min-width: unset;
+    scroll-snap-align: unset;
+  }
+
+  .monkey53::-webkit-scrollbar {
+    display: none;
   }
 }
 
-@media (min-width: 992px) {
+/* Keep horizontal scrolling on mobile */
+@media (max-width: 767px) {
+  .monkey53 {
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+    scroll-snap-type: inline mandatory;
+    padding-block-end: 15px;
+  }
+
   .monkey53 > li {
-    min-width: 350px;
-    max-width: 350px;
+    min-width: 100%;
+    scroll-snap-align: start;
+  }
+}
+
+/* Improve responsive layout for blog section */
+@media (min-width: 768px) {
+  .monkey81 {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
   }
 }
 
